@@ -9,92 +9,95 @@
 
 <body>
 	<header>
-	<div class="nawigacja navbar" id="MENU"> 
-		<div class="container nav-container">
-			<input class="checkbox" type="checkbox" name="" id="" />	
-		<div class="hamburger-lines">
-			<span class="line line1"></span>
-			<span class="line line2"></span>
-			<span class="line line3"></span>
-		  </div>  
-		<div class="menu-items">
-			<a href="#">usługi</a>
-			<a href="#">kontakt</a>
-		</div>
-		<a href="#">ikona</a>
-		<a href="#">PL/EN</a>	
-	</div>
+	<div class="navbar" > 
+			<div class="container nav-container">
+				<input class="checkbox" type="checkbox" name="" id="radio" />	
+				<div class="hamburger-lines">
+					<span class="line line1"></span>
+					<span class="line line2"></span>
+					<span class="line line3"></span>
+				</div>  
+				<div id="MENU" class="menu-items " onClick="zamknijMenu()">
+					<div class="menu-item"><a href="#uslugi" >usługi</a></div>
+					<div class="menu-item">	<a href="#kontakt">kontakt</a></div>
+					
+				
+				</div>
+				<div class="ikona">
+	<a href="#"><img src="./images/samo_logo_granat.png" alt=""></a>
+	
+			
+				</div>
+				<div class="placeholder"></div>
+			</div>
 	</div>
 		<div class="hero">
-			<div class="logo">
-			
+			<div class="logo">	
+				<!-- <img src="./images/logo 1000x1000 biale.png" alt="">	 -->
 				<p>
 					Zajmujemy się spawaniem światłowodów oraz pomiarami reflektometrycznymi na terenie całej Polski oraz Niemiec. Posiadamy duże doświadczenie oraz wysokiej klasy sprzęt renomowanych marek.
 				</p>
 				<div>
-				<button class=" btn btn_active"><a href="">kontakt</a></button>
-				<button><a href="">wiecej</a></button>
+				<button class=" btn btn_active"><a href="#kontakt">kontakt</a></button>
+				<button><a href="#uslugi">wiecej</a></button>
 				</div>
 			</div>		
 		</div>
 	</header>
 	<main>
-		<section class="uslugi">
+		<section class="uslugi" id="uslugi">
 			<h2>oferowane przez nas usługi</h2>
-			<div class="kontener">
-			
+			<div class="kontener">			
 				<div class="karta">
-					<img src="" alt="">
+					<img src="images/speedometer.png" alt="">
 					<h3>sprawdzenie światłowodów</h3>
 					<ul>
-					<li><P>spawanie sieci FTH</P></li>
-					<li><P></P></li>
-					<li><P></P></li>
-					<li><P></P></li>
-					<li><P></P></li>
-					<li><P></P></li>
+					<li><p>Spawanie sieci FTTH (sieć deweloperska)</p></li>
+					<li><p>Spawanie w złączach (mufach) nowych i istnięjących</p></li>
+					<li><p>Lokalizowanie oraz usuwanie usterek w sieciach światłowodowych</p></li>
+					<li><p>Uzbrajanie przełącznic światłowodowych oraz spawanie w nich</p></li>
+					<li><p>Spawanie w serwerowniach oraz szafach</p></li>
+					<li><p>Pomiary wykonanych spawów</p></li>
 					</ul>
 					<button><a href="">wybierz</a></button>
 				</div>
 				<div class="karta">
-					<img src="" alt="">
-				<h3>pomiary reflektometryczne</h3>
-				<ul>
-					<li><P>badanie</P></li>
-					<li><P></P></li>
-					<li><P></P></li>
-					<li><P></P></li>
-					<li><P></P></li>
-					<li><P></P></li>
-					</ul>
-					<button><a href="">wybierz</a></button>
+					<img src="images/gear-rotation.png" alt="">
+					<h3>pomiary reflektometryczne</h3>
+					<ul>
+						<li><p>Badanie tłumienności w zakresie fal 1310 / 1550 / 1625 nm</p></li>
+						<li><p>Pomiary na sieciach aktywnych i nieaktywnych w sieci PON / FTTH</p></li>
+						<li><p>Pomiary aktywnych lini</p></li>
+						<li><p>Uzbrajanie przełącznic światłowodowych oraz spawanie w nich</p></li>
+						<li><p>Lokalizacja uszkodzeń</p></li>
+						<li><p>Protokoły z każdego pomiaru generowane w wersji elektronicznej lub papierowe</p></li>					
+						</ul>
+						<button><a href="">wybierz</a></button>
 				</div>
 				
 			
 			</div>
 			
 		</section>
-		<section class="kontakt">
+		<section class="kontakt" >
 			
 				<h2>zapytaj o wycenę</h2>
 			<div class="kontener">
 			
 				<div class="karta">
-				<img src="#" alt="">
+					<img src="images/speedometer.png" alt="">
 					<h3>sprawdzenie światłowodów</h3>
 					<ul>
-						<li><P></P></li>
-						<li><P></P></li>
-						<li><P></P></li>
-						<li><P></P></li>
-						<li><P></P></li>
-						<li><P></P></li>
-						<button><a href="">wybierz</a></button>
-						</ul>
-					
+					<li><p>Spawanie sieci FTTH (sieć deweloperska)</p></li>
+					<li><p>Spawanie w złączach (mufach) nowych i istnięjących</p></li>
+					<li><p>Lokalizowanie oraz usuwanie usterek w sieciach światłowodowych</p></li>
+					<li><p>Uzbrajanie przełącznic światłowodowych oraz spawanie w nich</p></li>
+					<li><p>Spawanie w serwerowniach oraz szafach</p></li>
+					<li><p>Pomiary wykonanych spawów</p></li>
+					</ul>
+					<button><a href="">wybierz</a></button>
 				</div>
-				<div class="karta formularz">
-				
+				<div class="karta formularz" id="kontakt" >				
 					<form action="submit">
 						<label for="name">imię i nazwisko</label>
 						<input name= "name" type="text">
@@ -115,10 +118,34 @@
 		</section>
 	</main>
 	<footer>
-	<div class="logo_footer">logos</div>
-		<div class="social_media">social media</div>
+	<div class="logo_footer"><img src="./images/logo 500 granatowe.png" alt=""></div>
+	<div class="social_kontainer">
+		<div class="social">
+			<p>ul. Berensona 10e/34  </p>
+			<p>03-287 Warszawa</p>
+		</div>
+		<div class="border"></div>
+		<div class="social">
+			<p>kontakt@swiatlowody.info</p>
+			<p>+48 517 155 590</p>
+	</div>
+		<div class="border"></div>
+		<div class="social"><p>NIP:7742986201</p>
+		<p>REGON: 36344718</p>
+		</div>
+	</div>
+<p>copyright</p>
+		<!-- <div class="social_media">social media</div> -->
 		
 	</footer>
+<script>
 
+		
+		/* Zamykanie MENU */
+		function zamknijMenu(){
+			document.getElementById("radio").checked = false;
+
+		}
+</script>
 </body>
 </html>
